@@ -19,6 +19,11 @@ public class PrimeTest {
 	}
 	
 	@Test
+	public void testIsNotPrime() {
+		Assert.assertEquals(false,pc.isPrime(4));
+	}	
+	
+	@Test
 	public void testForwardRangeOrder() {
 		Assert.assertEquals(7,(Object)pc.generate(6,8).get(0));
 	}
