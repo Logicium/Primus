@@ -34,7 +34,7 @@ public class PrimeTest {
 	}
 	
 	@Test
-	public void testRange7900() {
+	public void testRange7900to7920() {
 		int[] ints = Arrays.stream(pc.generate(7900, 7920).toArray()).mapToInt(o -> (int)o).toArray();
 		Assert.assertArrayEquals( new int[]{7901,7907,7919},ints);
 	}
